@@ -4,7 +4,7 @@ initialisation html, css, js
 ## Sommaire 
 - [html](#html)
 - [SCSS](#scss)
-    - [@keyframes & animation] (#@keyframes-&-animation)
+    - [@keyframes](#@keyframes-&-animation)
     - [@mixin](#mixin)
 - [js](#js)
 
