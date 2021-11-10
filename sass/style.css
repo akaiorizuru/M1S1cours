@@ -1,1 +1,85 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes rotateanimationblock {
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotateanimationblock {
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+body {
+  background-color: #63e0b9;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+}
+
+body .rotate_animation {
+  margin: 5em;
+}
+
+body .rotate_animation .extsheet {
+  width: 60em;
+  height: 60em;
+}
+
+body .rotate_animation .extsheet .sheet {
+  width: 30%;
+  height: 30%;
+  border-radius: 0.5em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  opacity: 20%;
+  -webkit-animation-name: rotateanimationblock;
+          animation-name: rotateanimationblock;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 60S;
+          animation-duration: 60S;
+  -webkit-animation-timing-function: steps(60);
+          animation-timing-function: steps(60);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body .rotate_animation .extsheet .sheet .block1 {
+  position: absolute;
+  left: 49.25%;
+  top: 50%;
+  background-color: #2290bf;
+  width: 1.5%;
+  height: 25%;
+  opacity: 1;
+}
+
+body .rotate_animation .extsheet .sheet .block2 {
+  position: absolute;
+  left: 49.25%;
+  top: 50%;
+  background-color: #7864de;
+  width: 1.5%;
+  height: 25%;
+  opacity: 1;
+}
+
+body .rotate_animation .extsheet .sheet .block3 {
+  position: absolute;
+  left: 49.25%;
+  top: 50%;
+  background-color: #ed9a4c;
+  width: 1.5%;
+  height: 25%;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

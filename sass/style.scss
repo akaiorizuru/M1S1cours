@@ -1,1 +1,65 @@
-$test: white;
+//colors
+$refcolor: #63e0b9;
+$bgcsheet: white;
+$block1: #2290bf;
+$block2:#7864de; 
+$block3: #ed9a4c;
+
+//mixins
+@mixin block($cblock:$block1) {
+    position: absolute;
+    left:49.25%;
+    top: 50%;
+    background-color:$cblock;
+    width: 1.5%;
+    height: 25%;
+    opacity: 1;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+@keyframes rotateanimationblock {
+    100%{
+        transform:rotateZ(360deg);
+    }
+}
+
+body {
+    background-color: $refcolor;
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+
+    .rotate_animation{
+        margin: 5em;
+        .extsheet{
+            width: 60em;
+            height: 60em;
+            .sheet{
+                width: 30%;
+                height: 30%;
+                border-radius: 0.5em;
+                position: relative;
+                display: flex;
+                background-color: $bgcsheet;
+                opacity: 20%;
+                animation-name: rotateanimationblock;
+                animation-delay: 1s;
+                animation-duration: 60S;
+                animation-timing-function: steps(60); //mvt saccader ac steps
+                animation-iteration-count: infinite;
+                .block1{
+                    @include block;
+                }
+                .block2{
+                    @include block($cblock:$block2);
+                }
+                .block3{
+                    @include block($cblock:$block3);
+                }
+            }
+        }
+    }
+}
