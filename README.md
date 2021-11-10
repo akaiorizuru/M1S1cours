@@ -4,7 +4,7 @@ initialisation html, css, js
 ## Sommaire 
 - [html](#html)
 - [SCSS](#scss)
-    - [@keyframes](#@keyframes-&-animation)
+    - [@keyframes et animation](#@keyframes-et-animation)
     - [@mixin](#mixin)
 - [js](#js)
 
@@ -19,7 +19,7 @@ attribue data-group => peut permet d'ordonner les contenus par js après
 ## scss
 'helpers'=> en class tel que pour les text-center sur hmtl
 
-### @keyframes & animation
+### @keyframes et animation
 utiliser les __@keyframes__ pour l'__animation__ 
 ````scss
 @keyframes rotateanimationblock {
