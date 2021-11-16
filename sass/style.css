@@ -29,6 +29,8 @@ body .rotate_animation {
 body .rotate_animation .extsheet {
   width: 60em;
   height: 60em;
+  position: absolute;
+  top: 16vh;
 }
 
 body .rotate_animation .extsheet .sheet {
@@ -41,16 +43,6 @@ body .rotate_animation .extsheet .sheet {
   display: flex;
   background-color: white;
   opacity: 20%;
-  -webkit-animation-name: rotateanimationblock;
-          animation-name: rotateanimationblock;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 60S;
-          animation-duration: 60S;
-  -webkit-animation-timing-function: steps(60);
-          animation-timing-function: steps(60);
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 body .rotate_animation .extsheet .sheet .block1 {
@@ -81,5 +73,44 @@ body .rotate_animation .extsheet .sheet .block3 {
   width: 1.5%;
   height: 25%;
   opacity: 1;
+}
+
+body .rotate_animation .extsheet .sheet1 {
+  -webkit-animation-name: rotateanimationblock;
+          animation-name: rotateanimationblock;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  -webkit-animation-timing-function: steps(60);
+          animation-timing-function: steps(60);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body .rotate_animation .extsheet .sheet2 {
+  -webkit-animation-name: rotateanimationblock;
+          animation-name: rotateanimationblock;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 360s;
+          animation-duration: 360s;
+  -webkit-animation-timing-function: steps(60);
+          animation-timing-function: steps(60);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body .rotate_animation .extsheet .sheet3 {
+  -webkit-animation-name: rotateanimationblock;
+          animation-name: rotateanimationblock;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 3600s;
+          animation-duration: 3600s;
+  -webkit-animation-timing-function: steps(60);
+          animation-timing-function: steps(60);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 /*# sourceMappingURL=style.css.map */

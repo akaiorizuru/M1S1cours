@@ -28,6 +28,14 @@ $block3: #ed9a4c;
     }
 }
 
+@mixin animationtime ($duration:60s,$timing:steps(60)){
+    animation-name: rotateanimationblock;
+    animation-delay: 1s;
+    animation-duration: $duration;
+    animation-timing-function: $timing; //mvt saccader ac steps
+    animation-iteration-count: infinite;
+}
+
 body {
     background-color: $refcolor;
     font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
@@ -37,6 +45,8 @@ body {
         .extsheet{
             width: 60em;
             height: 60em;
+            position:absolute;
+            top: 16vh;
             .sheet{
                 width: 30%;
                 height: 30%;
@@ -45,11 +55,6 @@ body {
                 display: flex;
                 background-color: $bgcsheet;
                 opacity: 20%;
-                animation-name: rotateanimationblock;
-                animation-delay: 1s;
-                animation-duration: 60S;
-                animation-timing-function: steps(60); //mvt saccader ac steps
-                animation-iteration-count: infinite;
                 .block1{
                     @include block;
                 }
@@ -59,6 +64,15 @@ body {
                 .block3{
                     @include block($cblock:$block3);
                 }
+            }
+            .sheet1{
+                @include animationtime;
+            }
+            .sheet2{
+                @include animationtime(360s, steps(60))
+            }
+            .sheet3{
+                @include animationtime(3600s, steps(60))
             }
         }
     }
