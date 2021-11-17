@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+  max-width: 100vw;
+  height: 50vh;
+  background-color: aquamarine;
+  background-image: url("https://images.pexels.com/photos/9953781/pexels-photo-9953781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .titleheader {
+  text-align: center;
+  color: white;
+}
+
+.button-gonextsection {
+  color: white;
+  width: 20px;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 35vh;
+  left: 50%;
+  cursor: pointer;
+}
+
+.button-gonextsection .redimensionimg1 {
+  scale: 1.5;
+}
+
+.section-article {
+  width: auto;
+  margin: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-article .section-txt {
+  height: 200px;
+  width: 45%;
+  padding: 2em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border: solid 1px #cecece;
+}
+
+.section-article a {
+  margin-top: 2em;
+  text-decoration: none;
+  padding: 5px;
+  color: #b8b8b8;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.section-article a:hover {
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  background-color: indianred;
+}
+
+.section-article .card-text {
+  margin-bottom: 1em;
+}
+
+.section-article .section-img {
+  width: 50%;
+  background-color: burlywood;
+}
+
+.section-article .section-img1 {
+  width: 50%;
+  background-image: url("https://images.pexels.com/photos/10011010/pexels-photo-10011010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-article .section-img2 {
+  width: 50%;
+  background-image: url("https://images.pexels.com/photos/10141713/pexels-photo-10141713.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  background-color: coral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .textfooter {
+  bottom: -2em;
+  position: relative;
+  text-align: center;
+}
+/*# sourceMappingURL=exo20211117.css.map */

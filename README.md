@@ -148,3 +148,6 @@ $block3: #ed9a4c;
 ````javascript
 consolog('test')
 ````
+
+
+# Séance 3 || 2021117

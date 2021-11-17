@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@mixin sectionimg($backimg:url("https://images.pexels.com/photos/10141713/pexels-photo-10141713.jpeg")){
+        width: 50%;
+        background-image: $backimg;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+$marginsectrion:2em;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+    max-width: 100vw;
+    height: 50vh;
+    background-color: aquamarine;
+    background-image: url("https://images.pexels.com/photos/9953781/pexels-photo-9953781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .titleheader{
+        text-align: center;
+        color: white;
+    }
+}
+
+.button-gonextsection{
+    color: white;
+    width: 20px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 35vh;
+    left: 50%;
+    cursor: pointer;
+    .redimensionimg1{
+        scale: 1.5;
+    }
+}
+
+.section-article{
+    width: auto;
+    margin:5em;
+    display: flex;
+    .section-txt{
+        height: 200px;
+        width: 45%;
+        padding: 2em;
+        justify-content: flex-end;
+        border: solid 1px rgb(206, 206, 206);
+    }
+    a{
+        margin-top: 2em;
+        text-decoration: none;
+        padding: 5px;
+        color: rgb(184, 184, 184);
+        transition: background-color 0.5s, color 0.5s;
+        &:hover{
+            cursor: pointer;
+            color: white;
+            border-radius: 3px;
+            background-color: indianred;
+        }
+    }
+    .card-text{
+        margin-bottom: 1em;
+    }
+    .section-img{
+        width: 50%;
+        background-color: burlywood;
+    }
+    .section-img1{
+        @include sectionimg($backimg:url("https://images.pexels.com/photos/10011010/pexels-photo-10011010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"))
+    }
+    .section-img2{
+        @include sectionimg;
+    }
+}
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    .textfooter{
+        // padding-top: 2em;
+        bottom:-2em;
+        position: relative;
+        text-align: center;
+    }
+}
